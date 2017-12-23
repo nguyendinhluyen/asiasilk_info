@@ -50,41 +50,23 @@ foreach($arrAdvsBottom as $adv){
 
 //end adver bottom
 
-$server_time = time()*1000;
-
-
-$time_config = GetOnef('config_value','config','config_name="time_encourage"');
-
-$date_now = getDateNow();
-
-$date_expr = convertToDate($time_config);
-
-if($time_config)
-
-{
-
-	if($date_now >= $date_expr){
-
-		$Product = new Product();
-
-		$Product->resetPromotion();
-
-	}
-
-}
-
-$time_sale = GetOnef('config_value','config','config_name="time_encourage"');
-
-$show_sales1 = "display: none;";
-
-$show_sales2 = "";
-
-if($time_sale != ''){	
-
-	$show_sales1 = "";
-
-	$show_sales2 = "display: none;";
-
-}
+//$server_time = time()*1000;
+// $time_config = GetOnef('config_value','config','config_name="time_encourage"');
+// $date_now = getDateNow();
+// $date_expr = convertToDate($time_config);
+// if($time_config)
+// {
+// 	if($date_now >= $date_expr){
+// 		$Product = new Product();
+// 		$Product->resetPromotion();
+// 	}
+// }
+// $time_sale = GetOnef('config_value','config','config_name="time_encourage"');
+// $show_sales1 = "display: none;";
+// $show_sales2 = "";
+// if($time_sale != ''){	
+// 	$show_sales1 = "";
+// 	$show_sales2 = "display: none;";
+// }
 
 ?>
